@@ -1,0 +1,150 @@
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+.product-list {
+  position: relative;
+  margin-left: -1px;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  border: 1px solid #ebebeb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:hover {
+    box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
+    z-index: 11;
+  }
+
+  &-img {
+    padding-top: 10px;
+    position: relative;
+    width: 100%;
+  }
+
+  & .content {
+    .title {
+      display: block;
+      overflow: hidden;
+      font-size: 12px;
+      line-height: 22px;
+      margin-top: 13px;
+      height: 43px;
+      text-align: center;
+      a {
+        color: #000;
+      }
+    }
+
+    .price-shop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p{
+          font-size: 20px;
+          font-weight: 600;
+          margin-left: 10px;
+      }
+      .shop-add-button {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.cart-result {
+  border: 1px solid #e0e4cc;
+  border-radius: 5px;
+  margin-top: 10em;
+  padding: 1em;
+  margin-bottom: 30px;
+
+  .header {
+    font-size: 1.5em;
+    letter-spacing: 0.08em;
+    font-weight: 300;
+    color: #f60;
+    text-shadow: 0 1px 1px #ffffff;
+    text-transform: uppercase;
+    margin-top: 1em;
+  }
+
+  .divider {
+    border-bottom: 1px solid #e8e6e6;
+    background-color: #dadada;
+    height: 1px;
+    margin: 0.5em 0px 1.5em;
+    span {
+      display: block;
+      width: 50px;
+      height: 1px;
+      background-color: #f60;
+    }
+  }
+
+  .cart-title {
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+
+  .cart-total {
+    text-align: right;
+    margin-top: 50px;
+    border-top: 1px solid #f60;
+
+    &-title {
+      font-weight: bold;
+      font-size: 1.5em;
+      color: #000;
+      margin-right: 20px;
+    }
+
+    &-price {
+      color: #000;
+      font-size: 1.1em;
+      margin-right: 30px;
+    }
+  }
+
+  .remove-button {
+    text-align: center;
+    .btn-purchase {
+      text-transform: capitalize;
+      color: #fff;
+      margin: 20px auto 40px auto;
+      font-size: 1.75em;
+      background: #f60;
+    }
+  }
+
+  .cart-item-content {
+    border: 1px solid #e8e6e6;
+    padding: 30px;
+    margin-bottom: 20px;
+
+    &-image {
+      border-radius: 10px;
+    }
+
+    &-title {
+      color: #333;
+      margin-left: 0.5em;
+      font-size: 1.2em;
+      font-weight: 900;
+    }
+  }
+}
+
+#show {
+  // display: none;
+  background: red;
+}
+
+#show.visible {
+  display: block;
+  background: yellow;
+}
