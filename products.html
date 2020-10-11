@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Products List</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"">
+    <link rel="stylesheet" href="/sass/main.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <h5 class="navbar-text">Products List</h5>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#">
+              <i class="fa fa-shopping-cart cart-counter"></i>
+              Cart
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="product-list">
+              <img src="/images/pic1.jpg" alt="" class="product-list-img" />
+              <div class="content">
+                <div class="title">
+                  <span>Galexy A51</span>
+                </div>
+                <div class="price-shop">
+                  <p class="price">$98.9</p>
+                  <button class="btn btn-success shop-add-button">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-list">
+              <img src="/images/pic2.jpg" alt="" class="product-list-img" />
+              <div class="content">
+                <div class="title">
+                  <span>Galaxy Z Flip SM-</span>
+                </div>
+                <div class="price-shop">
+                  <p class="price">$36.9</p>
+                  <button class="btn btn-success shop-add-button">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-list">
+              <img src="/images/pic3.jpg" alt="" class="product-list-img" />
+              <div class="content">
+                <div class="title">
+                  <span>Galaxy Note20 Ultra</span>
+                </div>
+                <div class="price-shop">
+                  <p class="price">$71.0</p>
+                  <button class="btn btn-success shop-add-button">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4">
+            <div class="product-list">
+              <img src="/images/pic4.jpg" alt="" class="product-list-img" />
+              <div class="content">
+                <div class="title">
+                  <span>Galaxy S20 Plus SM-</span>
+                </div>
+                <div class="price-shop">
+                  <p class="price">$105.6</p>
+                  <button class="btn btn-success shop-add-button">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-list">
+              <img src="/images/pic5.jpg" alt="" class="product-list-img" />
+              <div class="content">
+                <div class="title">
+                  <span>iPhone SE 2020 A2275</span>
+                </div>
+                <div class="price-shop">
+                  <p class="price">$115.6</p>
+                  <button class="btn btn-success shop-add-button">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-list">
+              <img src="/images/pic6.jpg" alt="" class="product-list-img" />
+              <div class="content">
+                <div class="title">
+                  <span>iPhone 11 Pro Max A2220</span>
+                </div>
+                <div class="price-shop">
+                  <p class="price">$136.9</p>
+                  <button class="btn btn-success shop-add-button">
+                    Add To Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="navbar navbar-default" style="margin-top: 50px">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <h5 class="navbar-text">Cart</h5>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container cart-result">
+      <h2 class="header">Your Cart</h2>
+      <div class="divider"><span></span></div>
+      <div class="row text-center mt-4" style="margin-top: 50px">
+        <div class="col-md-4">
+          <span class="cart-title">
+            item
+            <div class="divider"></div>
+          </span>
+        </div>
+        <div class="col-md-4">
+          <span class="cart-title">
+            price
+            <div class="divider"></div>
+          </span>
+        </div>
+        <div class="col-md-4">
+          <span class="cart-title">
+            quantity
+            <div class="divider"></div>
+          </span>
+        </div>
+      </div>
+      <div class="cart-items"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+          </div>
+        </div>
+      </div>
+      <div class="remove-button">
+        <button class="btn btn-purchase" type="button" id="show">
+          Purchase
+        </button>
+      </div>
+    </section>
+
+    <script src="/product.js" async></script>
+  </body>
+</html>
